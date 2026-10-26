@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aarsh Desai | Data Scientist &amp; Applied ML Engineer</title>
+  <meta name="description" content="Aarsh Desai: Data Scientist and Applied ML Engineer. LLM agents with retrieval, memory and guardrails, and deep learning on ECGs and X-rays, measured on labelled evaluation sets.">
+  <meta property="og:title" content="Aarsh Desai | Data Scientist &amp; Applied ML Engineer">
+  <meta property="og:description" content="I build machine learning and LLM systems, and I measure them before I trust them.">
+  <meta property="og:url" content="https://aarshdesai-ds.github.io/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Heading font (Poppins) from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Runs before the page draws: remembers light/dark choice and turns on animations -->
+  <script>
+    document.documentElement.classList.add('js');
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Thin bar at the very top that fills as you scroll -->
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- Menu button (only shown on phones and small screens) -->
+  <button class="menu-toggle" id="menu-toggle" aria-controls="sidebar" aria-expanded="false" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+  <!-- ===================== SIDEBAR ===================== -->
+  <header class="sidebar" id="sidebar">
+    <div class="profile">
+      <!-- To use a photo instead of initials, see "How to update your site" -->
+      <div class="avatar" aria-hidden="true">AD</div>
+      <p class="side-name"><a href="#hero">Aarsh Desai</a></p>
+      <p class="side-role">Data Scientist &amp; Applied ML Engineer</p>
+
+      <ul class="socials">
+        <li><a href="https://github.com/aarshdesai-ds" target="_blank" rel="noopener" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg></a></li>
+        <li><a href="https://www.linkedin.com/in/aarsh-desai-5953b0277/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a></li>
+        <li><a href="mailto:aarshdesai004@gmail.com" aria-label="Email Aarsh">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a></li>
+        <li><a href="resume.pdf" target="_blank" rel="noopener" aria-label="Resume (PDF)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></a></li>
+      </ul>
+    </div>
+
+    <nav class="side-nav" aria-label="Main">
+      <ul>
+        <li><a href="#hero"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Home</a></li>
+        <li><a href="#about"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>About</a></li>
+        <li><a href="#projects"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Projects</a></li>
+        <li><a href="#experience"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg>Experience</a></li>
+        <li><a href="#skills"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>Skills</a></li>
+        <li><a href="#education"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>Education</a></li>
+        <li><a href="#contact"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15A8 8 0 1 1 9 4a6.5 6.5 0 0 0 11 11z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <span class="theme-label">Dark mode</span>
+    </button>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <!-- Animated network of dots in the background (drawn by script.js) -->
+      <canvas id="net" aria-hidden="true"></canvas>
+
+      <div class="hero-content">
+        <p class="hero-hello">Hi, I'm</p>
+        <h1>Aarsh Desai</h1>
+
+        <!-- Typing effect. Edit the phrases inside data-phrases, separated by | -->
+        <p class="typed-line">
+          <span class="typed" aria-hidden="true"
+            data-phrases="Data Scientist &amp; Applied ML Engineer|I build LLM agents with guardrails|I train deep learning models on ECGs and X-rays|I measure before I trust">Data Scientist &amp; Applied ML Engineer</span><span class="caret" aria-hidden="true"></span>
+          <span class="sr-only">Data Scientist and Applied ML Engineer</span>
+        </p>
+
+        <p class="hero-lead">
+          I build machine learning and LLM systems, and I measure them before I trust them:
+          LLM applications with retrieval, agents, memory and guardrails; deep learning on signals and images;
+          and the engineering that makes a model usable.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">Download resume</a>
+        </div>
+        <p class="hero-loc">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Los Angeles, CA
+        </p>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About section"><span></span></a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Get to know me</p>
+          <h2 id="about-title">About</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p class="about-intro">
+              I'm a recent Purdue University graduate (B.S. in Data Science, minor in Economics) and a former
+              AI Product Engineer Intern at Raaz MD, an early-stage healthcare startup working to break the stigma
+              around men's sexual wellness.
+            </p>
+            <ul class="check-list">
+              <li>Multilingual voice-AI and RAG pipelines that turn calls into structured documentation</li>
+              <li>LangGraph agents with human-in-the-loop pauses, long-term memory, labelled evaluation sets and code-level guardrails</li>
+              <li>Deep learning on ECG signals and chest X-rays</li>
+              <li>Analytics internships covering 3,000+ patient records and 50,000+ education records</li>
+            </ul>
+          </div>
+
+          <!-- Numbers count up when they scroll into view. The text inside each span is the real value. -->
+          <ul class="stats reveal" aria-label="Highlights">
+            <li class="stat">
+              <span class="stat-num"><span class="count" data-to="16">16</span> of 16</span>
+              <span class="stat-label">emergencies caught by CardioDesk's safety check</span>
+            </li>
+            <li class="stat">
+              <span class="stat-num"><span class="count" data-to="0.842" data-decimals="3">0.842</span></span>
+              <span class="stat-label">AUROC for structural heart disease (EchoNext-SHD)</span>
+            </li>
+            <li class="stat">
+              <span class="stat-num"><span class="count" data-to="82543">82,543</span></span>
+              <span class="stat-label">ECGs modeled</span>
+            </li>
+            <li class="stat">
+              <span class="stat-num"><span class="count" data-to="112120">112,120</span></span>
+              <span class="stat-label">chest X-rays classified</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- How I Work -->
+        <h3 class="sub-title reveal">How I work</h3>
+        <ol class="principles">
+          <li class="principle reveal"><strong>Measure first.</strong> I build a labelled test set before tuning anything, and change one thing at a time.</li>
+          <li class="principle reveal"><strong>Report what didn't work.</strong> My READMEs include the experiments that lowered a score and the limitations still open.</li>
+          <li class="principle reveal"><strong>Keep safety decisions deterministic.</strong> Where an error is costly, I put the rule in code and keep a person in the loop.</li>
+          <li class="principle reveal"><strong>Fix model bias in code, not in the prompt.</strong> A few lines of code fix skewed output more reliably than another instruction.</li>
+          <li class="principle reveal"><strong>Choose metrics that fit the problem.</strong> AUROC and calibration for imbalanced data, missed cases counted separately from false alarms.</li>
+          <li class="principle reveal"><strong>Ship it properly.</strong> An API, tests, a container and a README that states what the system is not for.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section section-alt" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Measured results</p>
+          <h2 id="projects-title">Featured Projects</h2>
+        </div>
+
+        <!-- Filter buttons. data-filter must match a word in each card's data-category -->
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="llm" aria-pressed="false">LLM &amp; Agents</button>
+          <button class="filter-btn" type="button" data-filter="dl" aria-pressed="false">Deep Learning</button>
+        </div>
+
+        <div class="project-grid">
+
+          <!-- ========== PROJECT CARD (copy from here...) ========== -->
+          <article class="project-card reveal" data-category="llm">
+            <div class="card-top">
+              <span class="card-cat">LLM &amp; Agents</span>
+              <span class="card-metric">16 of 16</span>
+              <span class="card-metric-label">emergencies caught</span>
+            </div>
+            <div class="card-body">
+              <h3>CardioDesk</h3>
+              <p class="card-sub">Patient-message triage assistant</p>
+              <p>A RAG assistant that triages patient portal messages for a heart clinic and drafts replies for nurse review.</p>
+              <ul class="tags" aria-label="Technologies"><li>LangGraph</li><li>RAG</li><li>FastAPI</li></ul>
+              <div class="card-actions">
+                <button class="details-btn" type="button">See results</button>
+                <a href="https://github.com/aarshdesai-ds/cardiodesk-patient-message-assistant" target="_blank" rel="noopener" aria-label="CardioDesk code on GitHub">Code →</a>
+              </div>
+            </div>
+            <!-- Shown in the pop-up when "See results" is clicked -->
+            <template>
+              <h3>CardioDesk</h3>
+              <p class="dialog-sub">Patient-message triage assistant</p>
+              <ul class="metrics">
+                <li>Two-layer safety check caught <strong>100% of emergencies (16 of 16)</strong> on 54 labelled synthetic messages, against 69% for rules alone and 81% for the model alone</li>
+                <li><strong>98%</strong> intent accuracy; a 3-tool agent declined <strong>3 of 3</strong> dosing requests</li>
+                <li>Rebuilt in LangGraph with an <code>interrupt()</code> nurse-review step and FastAPI case endpoints: <strong>100%</strong> of normal drafts paused for review, no emergency waited, and none of the 54 results changed</li>
+              </ul>
+              <a class="btn btn-primary" href="https://github.com/aarshdesai-ds/cardiodesk-patient-message-assistant" target="_blank" rel="noopener">View code on GitHub</a>
+            </template>
+          </article>
+          <!-- ========== (...to here) ========== -->
+
+          <article class="project-card reveal" data-category="dl">
+            <div class="card-top">
+              <span class="card-cat">Deep Learning</span>
+              <span class="card-metric">0.842</span>
+              <span class="card-metric-label">AUROC</span>
+            </div>
+            <div class="card-body">
+              <h3>EchoNext-SHD</h3>
+              <p class="card-sub">Structural heart disease detection from 12-lead ECGs</p>
+              <p>A 1D-CNN residual ensemble that fuses ECG and clinical features, trained on 82,543 ECGs.</p>
+              <ul class="tags" aria-label="Technologies"><li>PyTorch</li><li>FastAPI</li><li>Docker</li><li>Gradio</li></ul>
+              <div class="card-actions">
+                <button class="details-btn" type="button">See results</button>
+                <a href="https://github.com/aarshdesai-ds/echonext-shd-detection" target="_blank" rel="noopener" aria-label="EchoNext-SHD code on GitHub">Code →</a>
+              </div>
+            </div>
+            <template>
+              <h3>EchoNext-SHD</h3>
+              <p class="dialog-sub">Structural heart disease detection from 12-lead ECGs</p>
+              <ul class="metrics">
+                <li>82,543 ECGs; 1D-CNN residual ensemble with ECG and clinical feature fusion</li>
+                <li><strong>0.842 AUROC</strong> and <strong>0.812 AUPRC</strong></li>
+                <li>Calibration, ablations and a model card</li>
+                <li>FastAPI, Docker, a Gradio demo and GitHub Actions</li>
+              </ul>
+              <a class="btn btn-primary" href="https://github.com/aarshdesai-ds/echonext-shd-detection" target="_blank" rel="noopener">View code on GitHub</a>
+            </template>
+          </article>
+
+          <article class="project-card reveal" data-category="llm">
+            <div class="card-top">
+              <span class="card-cat">LLM &amp; Agents</span>
+              <span class="card-metric">64% → 31%</span>
+              <span class="card-metric-label">right answers on the most common letter</span>
+            </div>
+            <div class="card-body">
+              <h3>QuizMate</h3>
+              <p class="card-sub">LangGraph Python tutor with long-term memory</p>
+              <p>Answers from notes, runs quizzes and remembers each learner across sessions.</p>
+              <ul class="tags" aria-label="Technologies"><li>LangGraph</li><li>SQLite</li><li>Memory</li></ul>
+              <div class="card-actions">
+                <button class="details-btn" type="button">See results</button>
+                <a href="https://github.com/aarshdesai-ds/quizmate-python-tutor" target="_blank" rel="noopener" aria-label="QuizMate code on GitHub">Code →</a>
+              </div>
+            </div>
+            <template>
+              <h3>QuizMate</h3>
+              <p class="dialog-sub">LangGraph Python tutor with long-term memory</p>
+              <ul class="metrics">
+                <li>Quiz subgraph that pauses with <code>interrupt()</code> for each answer</li>
+                <li>Found the model put <strong>64% of right answers on one letter (23 of 36)</strong>; a shuffle in code brought the most common letter down to <strong>31%</strong></li>
+                <li>Long-term memory with fact extraction, scores written only by code, and approval before any delete</li>
+                <li>Extraction accuracy raised from <strong>90% to 100%</strong> on 20 labelled messages after tracing each failure to a mislabel or a rule clash</li>
+              </ul>
+              <a class="btn btn-primary" href="https://github.com/aarshdesai-ds/quizmate-python-tutor" target="_blank" rel="noopener">View code on GitHub</a>
+            </template>
+          </article>
+
+          <article class="project-card reveal" data-category="dl">
+            <div class="card-top">
+              <span class="card-cat">Deep Learning</span>
+              <span class="card-metric">0.604 → 0.797</span>
+              <span class="card-metric-label">test macro-AUROC</span>
+            </div>
+            <div class="card-body">
+              <h3>Chest X-Ray Classifier</h3>
+              <p class="card-sub">Multi-label detection of 14 thoracic findings</p>
+              <p>DenseNet-121 transfer learning on NIH ChestX-ray14, with a live Streamlit app.</p>
+              <ul class="tags" aria-label="Technologies"><li>PyTorch</li><li>Transfer learning</li><li>Streamlit</li></ul>
+              <div class="card-actions">
+                <button class="details-btn" type="button">See results</button>
+                <a href="https://github.com/aarshdesai-ds/chest-xray-classifier" target="_blank" rel="noopener" aria-label="Chest X-Ray Classifier code on GitHub">Code →</a>
+              </div>
+            </div>
+            <template>
+              <h3>Chest X-Ray Classifier</h3>
+              <p class="dialog-sub">Multi-label detection of 14 thoracic findings on NIH ChestX-ray14</p>
+              <ul class="metrics">
+                <li>112,120 X-rays from 30,805 patients</li>
+                <li>DenseNet-121 transfer learning raised test macro-AUROC <strong>32%, from 0.604</strong> for a from-scratch baseline <strong>to 0.797</strong></li>
+                <li>Patient-level splits, per-class thresholds and a Grad-CAM audit</li>
+                <li>Live Streamlit app</li>
+              </ul>
+              <a class="btn btn-primary" href="https://github.com/aarshdesai-ds/chest-xray-classifier" target="_blank" rel="noopener">View code on GitHub</a>
+            </template>
+          </article>
+
+          <article class="project-card reveal" data-category="llm">
+            <div class="card-top">
+              <span class="card-cat">LLM &amp; Agents</span>
+              <span class="card-metric">86% → 100%</span>
+              <span class="card-metric-label">agent tool selection</span>
+            </div>
+            <div class="card-body">
+              <h3>TriageDesk</h3>
+              <p class="card-sub">Customer-review triage with RAG and an agent</p>
+              <p>A RAG pipeline and follow-up agent where every change was measured.</p>
+              <ul class="tags" aria-label="Technologies"><li>LangGraph</li><li>RAG</li><li>Evaluation</li></ul>
+              <div class="card-actions">
+                <button class="details-btn" type="button">See results</button>
+                <a href="https://github.com/aarshdesai-ds/triagedesk-customer-review-assistant" target="_blank" rel="noopener" aria-label="TriageDesk code on GitHub">Code →</a>
+              </div>
+            </div>
+            <template>
+              <h3>TriageDesk</h3>
+              <p class="dialog-sub">Customer-review triage with a RAG pipeline and a follow-up agent</p>
+              <ul class="metrics">
+                <li>Policy retrieval raised from <strong>78% to 95% (32 to 39 of 41)</strong> across single-change experiments</li>
+                <li>Agent rebuilt from ReAct to a tool-calling loop, raising tool selection from <strong>86% to 100% (18 to 21 of 21)</strong></li>
+                <li>Both parts rebuilt in LangGraph with a code-level hazard rule and an <code>interrupt()</code> supervisor pause, raising urgent catches from <strong>11 to 12 of 13</strong> and pausing <strong>14 of 14</strong> escalations</li>
+              </ul>
+              <a class="btn btn-primary" href="https://github.com/aarshdesai-ds/triagedesk-customer-review-assistant" target="_blank" rel="noopener">View code on GitHub</a>
+            </template>
+          </article>
+
+          <article class="project-card reveal" data-category="llm">
+            <div class="card-top">
+              <span class="card-cat">LLM &amp; Agents</span>
+              <span class="card-metric">50% → 0%</span>
+              <span class="card-metric-label">unsafe-reply rate</span>
+            </div>
+            <div class="card-body">
+              <h3>FitBuddy</h3>
+              <p class="card-sub">Home-workout chatbot with an injury guard</p>
+              <p>Four tools, Chroma retrieval, SQLite-checkpointed memory and LangSmith tracing.</p>
+              <ul class="tags" aria-label="Technologies"><li>LangGraph</li><li>Chroma</li><li>LangSmith</li></ul>
+              <div class="card-actions">
+                <button class="details-btn" type="button">See results</button>
+                <a href="https://github.com/aarshdesai-ds/fitbuddy-workout-chatbot" target="_blank" rel="noopener" aria-label="FitBuddy code on GitHub">Code →</a>
+              </div>
+            </div>
+            <template>
+              <h3>FitBuddy</h3>
+              <p class="dialog-sub">LangGraph home-workout chatbot with an injury guard</p>
+              <ul class="metrics">
+                <li>Four tools, Chroma retrieval, SQLite-checkpointed memory and LangSmith tracing</li>
+                <li>The injury guard cut the unsafe-reply rate from <strong>50% to 0% (9 of 18 to 0 of 18)</strong></li>
+                <li>Found that a keyword safety check missed <strong>78% of unsafe replies (7 of 9)</strong> and rewrote it, with 19 hand-written test cases</li>
+                <li>Human-in-the-loop approval before logging</li>
+              </ul>
+              <a class="btn btn-primary" href="https://github.com/aarshdesai-ds/fitbuddy-workout-chatbot" target="_blank" rel="noopener">View code on GitHub</a>
+            </template>
+          </article>
+
+        </div>
+
+        <!-- More projects -->
+        <h3 class="sub-title reveal">More projects</h3>
+        <ul class="more-grid">
+          <li class="more-card reveal"><a href="https://github.com/aarshdesai-ds/diabetes-prediction" target="_blank" rel="noopener"><strong>Diabetes Risk Screening</strong><span>Calibrated Random Forest; 0.84 ROC AUC (95% CI 0.78-0.89) and 0.74 AUPRC; recall-first threshold at 84% sensitivity; subgroup audit; SHAP</span></a></li>
+          <li class="more-card reveal"><a href="https://github.com/aarshdesai-ds/aarsh-desai-capstone-project" target="_blank" rel="noopener"><strong>Returns and Growth Intelligence Pipeline</strong><span>MySQL reports, pandas analysis and a Gemini-written narrative with a numeric checker</span></a></li>
+          <li class="more-card reveal"><a href="https://github.com/aarshdesai-ds/mi-2024-2026-case-study" target="_blank" rel="noopener"><strong>Mumbai Indians 2024-2026 Case Study</strong><span>219 matches; Welch's t-test, Mann-Whitney U and Fisher's exact test</span></a></li>
+          <li class="more-card reveal"><a href="https://github.com/aarshdesai-ds/La-Liga_Project_Aarsh" target="_blank" rel="noopener"><strong>La Liga Statistical Analysis</strong><span>3,040 matches across 8 seasons; betting odds, Pythagorean expectation and xG</span></a></li>
+          <li class="more-card reveal"><a href="https://github.com/aarshdesai-ds/surgicare-hms" target="_blank" rel="noopener"><strong>SurgiCare HMS</strong><span>Hospital management system in active development; FastAPI, React, Supabase</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Where I've worked</p>
+          <h2 id="experience-title">Experience</h2>
+        </div>
+
+        <ol class="timeline">
+          <!-- ========== JOB (copy from here...) ========== -->
+          <li class="t-item reveal">
+            <p class="t-date">Jul 2026 – Sep 2026</p>
+            <h3>AI Product Engineer Intern</h3>
+            <p class="t-org">Raaz MD, an early-stage healthcare startup working to break the stigma around men's sexual wellness</p>
+            <ul>
+              <li>Built an end-to-end multilingual voice-AI pipeline that turned Hindi and other regional-language calls into structured clinical summaries with RAG (ChromaDB) and a locally hosted 4-bit quantized Mistral-7B model, cutting manual review time by ~40%</li>
+              <li>Developed a call-type routing system that separates clinical follow-ups from logistics escalations</li>
+              <li>Added plausibility guardrails to catch LLM hallucinations, and a PII de-identification layer with NER-based redaction and phone-number pseudonymization</li>
+              <li>Designed a longitudinal health-data layer that structures patient history into clinician-usable, ML-ready records</li>
+            </ul>
+          </li>
+          <!-- ========== (...to here) ========== -->
+
+          <li class="t-item reveal">
+            <p class="t-date">Aug 2025 – Dec 2025</p>
+            <h3>Undergraduate Teaching Assistant</h3>
+            <p class="t-org">Purdue University</p>
+            <ul>
+              <li>Taught Python, Git, command-line workflows and debugging to 50+ first-year students in CS 19300, and resolved code errors in one-on-one office hours</li>
+            </ul>
+          </li>
+
+          <li class="t-item reveal">
+            <p class="t-date">May 2024 – Aug 2024</p>
+            <h3>Data Analyst Intern</h3>
+            <p class="t-org">Oeson Learning</p>
+            <ul>
+              <li>Developed Python workflows to validate, clean and merge 50,000+ rows of education data across multiple sources, improving data reliability by 20% and reducing cleaning/ingestion overhead by 30%</li>
+              <li>Assisted with A/B testing of student engagement for two learning modules, which led to a 9% increase in quiz engagement</li>
+              <li>Created Tableau dashboards for internal teams, saving 40% of recurring reporting time</li>
+            </ul>
+          </li>
+
+          <li class="t-item reveal">
+            <p class="t-date">May 2023 – Aug 2023</p>
+            <h3>Healthcare Analytics Intern</h3>
+            <p class="t-org">Surgicare Hospital Services</p>
+            <ul>
+              <li>Analyzed 3,000+ patient and operational records in Python and Excel, uncovering a 17% rise in gynecology prescriptions that informed a pharmaceutical partner's procurement planning</li>
+              <li>Improved resource-allocation efficiency by 25% by forecasting supply needs, and cut report preparation time by 35% across 10+ recurring reports</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Toolkit</p>
+          <h2 id="skills-title">Skills</h2>
+        </div>
+
+        <div class="tabs reveal">
+          <div class="tab-list" role="tablist" aria-label="Skill groups">
+            <button role="tab" id="tab-llm" aria-controls="panel-llm" aria-selected="true" tabindex="0">LLM &amp; GenAI</button>
+            <button role="tab" id="tab-ml" aria-controls="panel-ml" aria-selected="false" tabindex="-1">Machine Learning</button>
+            <button role="tab" id="tab-eng" aria-controls="panel-eng" aria-selected="false" tabindex="-1">Engineering &amp; MLOps</button>
+            <button role="tab" id="tab-data" aria-controls="panel-data" aria-selected="false" tabindex="-1">Data &amp; BI</button>
+          </div>
+
+          <div class="tab-panel" id="panel-llm" role="tabpanel" aria-labelledby="tab-llm">
+            <ul class="chips">
+              <li>LangGraph</li><li>LangChain</li><li>LangSmith</li><li>RAG</li><li>Tool-calling agents</li><li>Human-in-the-loop approval</li><li>Long-term memory</li><li>Structured output</li><li>Prompt engineering</li><li>Guardrails</li><li>LLM evaluation</li><li>ChromaDB</li><li>OpenAI and Gemini APIs</li><li>Fine-tuning (LoRA)</li><li>Hugging Face</li>
+            </ul>
+          </div>
+          <div class="tab-panel" id="panel-ml" role="tabpanel" aria-labelledby="tab-ml" hidden>
+            <ul class="chips">
+              <li>PyTorch</li><li>TensorFlow/Keras</li><li>scikit-learn</li><li>XGBoost</li><li>Random Forest</li><li>CNNs</li><li>Transfer learning</li><li>Calibration</li><li>Threshold tuning</li><li>Grad-CAM</li><li>SHAP</li><li>Hypothesis testing</li>
+            </ul>
+          </div>
+          <div class="tab-panel" id="panel-eng" role="tabpanel" aria-labelledby="tab-eng" hidden>
+            <ul class="chips">
+              <li>Python</li><li>SQL</li><li>FastAPI</li><li>Pydantic</li><li>Docker</li><li>AWS (EC2, S3)</li><li>GitHub Actions</li><li>pytest</li><li>Model registry</li><li>Streamlit</li><li>Gradio</li><li>React</li><li>Supabase/PostgreSQL</li>
+            </ul>
+          </div>
+          <div class="tab-panel" id="panel-data" role="tabpanel" aria-labelledby="tab-data" hidden>
+            <ul class="chips">
+              <li>pandas</li><li>NumPy</li><li>MySQL</li><li>SQLite</li><li>Tableau</li><li>Power BI</li><li>Matplotlib</li><li>Seaborn</li><li>Plotly</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Learning</p>
+          <h2 id="education-title">Education &amp; Certifications</h2>
+        </div>
+        <div class="edu-grid">
+          <div class="edu-card reveal">
+            <h3>Purdue University, College of Science</h3>
+            <p>B.S. Data Science, minor in Economics</p>
+            <p class="muted">Aug 2022 – May 2026 · West Lafayette, IN</p>
+          </div>
+          <div class="edu-card reveal">
+            <h3>Certifications</h3>
+            <ul class="cert-list">
+              <li>Google Data Analytics Professional Certificate <span>Jul 2024</span></li>
+              <li>Google Advanced Data Analytics Professional Certificate <span>Aug 2024</span></li>
+              <li>SQL for Data Science, UC Davis <span>Oct 2024</span></li>
+              <li>IBM AI Engineering Professional Certificate <span>In progress</span></li>
+              <li>IBM Data Engineering Professional Certificate <span>In progress</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="eyebrow">Let's connect</p>
+          <h2 id="contact-title">Contact</h2>
+          <p>I'm interested in AI Engineer, ML Engineer and Data Scientist roles. The fastest way to reach me is email.</p>
+
+          <div class="email-row">
+            <a class="email-link" href="mailto:aarshdesai004@gmail.com">aarshdesai004@gmail.com</a>
+            <button class="copy-btn" id="copy-email" type="button" data-email="aarshdesai004@gmail.com">Copy email</button>
+            <span class="sr-only" id="copy-status" role="status"></span>
+          </div>
+
+          <div class="contact-links">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/aarsh-desai-5953b0277/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-outline" href="https://github.com/aarshdesai-ds" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-outline" href="resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>© 2026 Aarsh Desai</p>
+    </footer>
+  </main>
+
+  <!-- Pop-up window for project results -->
+  <dialog class="project-dialog" id="project-dialog" aria-label="Project results">
+    <button class="dialog-close" type="button" aria-label="Close">×</button>
+    <div class="dialog-body"></div>
+  </dialog>
+
+  <!-- Back-to-top button -->
+  <a class="to-top" id="to-top" href="#hero" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>
+  </a>
+
+</body>
+</html>
