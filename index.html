@@ -342,6 +342,35 @@
           <article class="project-card reveal" data-category="llm">
             <div class="card-top">
               <span class="card-cat">LLM &amp; Agents</span>
+              <span class="card-metric">41% → 0%</span>
+              <span class="card-metric-label">"not found" answers</span>
+            </div>
+            <div class="card-body">
+              <h3>RecipeAsk</h3>
+              <p class="card-sub">Corrective RAG workflow for cooking questions</p>
+              <p>Grades retrieved recipes and falls back to web search when the recipe library falls short.</p>
+              <ul class="tags" aria-label="Technologies"><li>LangGraph</li><li>Corrective RAG</li><li>LangSmith</li></ul>
+              <div class="card-actions">
+                <button class="details-btn" type="button">See results</button>
+                <a href="https://github.com/aarshdesai-ds/recipeask-corrective-rag" target="_blank" rel="noopener" aria-label="RecipeAsk code on GitHub">Code →</a>
+              </div>
+            </div>
+            <template>
+              <h3>RecipeAsk</h3>
+              <p class="dialog-sub">Corrective RAG workflow in LangGraph for cooking questions</p>
+              <ul class="metrics">
+                <li>Grades recipes and falls back to web search, cutting "not found" answers from <strong>41% to 0%</strong>, with <strong>100%</strong> of citations pointing to real sources</li>
+                <li>Line-level chunking that keeps short facts like quantities, and gap-targeted web queries</li>
+                <li>One batched evidence filter: about <strong>95% fewer</strong> filter calls</li>
+                <li>LangSmith traces exposed a mislabelled eval case and one unsupported citation</li>
+              </ul>
+              <a class="btn btn-primary" href="https://github.com/aarshdesai-ds/recipeask-corrective-rag" target="_blank" rel="noopener">View code on GitHub</a>
+            </template>
+          </article>
+
+          <article class="project-card reveal" data-category="llm">
+            <div class="card-top">
+              <span class="card-cat">LLM &amp; Agents</span>
               <span class="card-metric">50% → 0%</span>
               <span class="card-metric-label">unsafe-reply rate</span>
             </div>
